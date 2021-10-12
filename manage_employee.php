@@ -79,7 +79,7 @@ if(isset($_GET['id'])){
 				error:err=>console.log(),
 				success:function(resp){
 						if(resp == 1){
-							alert_toast("Employee's data successfully saved","success");
+							alert_toast("Los datos del empleado se guardaron correctamente","success");
 								setTimeout(function(){
 								location.reload();
 

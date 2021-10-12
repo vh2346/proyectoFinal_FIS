@@ -38,7 +38,7 @@
 			</div>	
 			<div class="col-md-2 offset-md-2">
 				<label for="" class="control-label">&nbsp</label>
-				<button class="btn btn-primary btn-block btn-sm" type="button" id="add_list"> Add to List</button>
+				<button class="btn btn-primary btn-block btn-sm" type="button" id="add_list"> Añadir</button>
 			</div>	
 		</div>
 		<hr>
@@ -47,16 +47,16 @@
 				<thead>
 					<tr>
 						<th class="text-center">
-							Allowance
+							Novedad
 						</th>
 						<th class="text-center">
-							Type
+							Tipo
 						</th>
 						<th class="text-center">
-							Amount
+							Monto
 						</th>
 						<th class="text-center">
-							Date
+							Fecha
 						</th>
 						<th class="text-center">
 							

@@ -37,7 +37,7 @@
 		error:err=>console.log(),
 		success:function(resp){
 				if(resp == 1){
-					alert_toast("Payroll successfully saved","success");
+					alert_toast("Nómina guardada correctamente","success");
 					setTimeout(function(){
 								location.reload()
 							},1000)

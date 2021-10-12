@@ -9,12 +9,12 @@
 			<form action="" id="manage-position">
 				<div class="card">
 					<div class="card-header">
-						  Position Form
+						  Formulario Cargo
 				  	</div>
 					<div class="card-body">
 							<input type="hidden" name="id">
 							<div class="form-group">
-								<label class="control-label">Department</label>
+								<label class="control-label">Proyecto</label>
 								<select class="custom-select browser-default select2" name="department_id">
 									<option value=""></option>
 								<?php
@@ -26,7 +26,7 @@
 								</select>
 							</div>
 							<div class="form-group">
-								<label class="control-label">Name</label>
+								<label class="control-label">Nombre</label>
 								<textarea name="name" id="" cols="30" rows="2" class="form-control"></textarea>
 							</div>
 							
@@ -35,8 +35,8 @@
 					<div class="card-footer">
 						<div class="row">
 							<div class="col-md-12">
-								<button class="btn btn-sm btn-primary col-sm-3 offset-md-3"> Save</button>
-								<button class="btn btn-sm btn-default col-sm-3" type="button" onclick="_reset()"> Cancel</button>
+								<button class="btn btn-sm btn-primary col-sm-3 offset-md-3"> Guardar</button>
+								<button class="btn btn-sm btn-default col-sm-3" type="button" onclick="_reset()"> Cancelar</button>
 							</div>
 						</div>
 					</div>
@@ -53,8 +53,8 @@
 							<thead>
 								<tr>
 									<th class="text-center">#</th>
-									<th class="text-center">Position</th>
-									<th class="text-center">Action</th>
+									<th class="text-center">Cargo</th>
+									<th class="text-center">Accion</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -70,10 +70,10 @@
 										 <p> <b><?php echo $row['name'] ?></b></p>
 									</td>
 									<td class="text-center">
-										<button class="btn btn-sm btn-primary edit_position" type="button" data-id="<?php echo $row['id'] ?>" data-name="<?php echo $row['name'] ?>" data-department_id="<?php echo $row['department_id'] ?>"  >Edit</button>
-										<button class="btn btn-sm btn-danger delete_position" type="button" data-id="<?php echo $row['id'] ?>">Delete</button>
+										<button class="btn btn-sm btn-primary edit_position" type="button" data-id="<?php echo $row['id'] ?>" data-name="<?php echo $row['name'] ?>" data-department_id="<?php echo $row['department_id'] ?>"  >Editar</button>
+										<button class="btn btn-sm btn-danger delete_position" type="button" data-id="<?php echo $row['id'] ?>">Eliminar</button>
 									</td>
-								</tr>
+								</tr> 
 								<?php endwhile; ?>
 							</tbody>
 						</table>
@@ -103,12 +103,12 @@
 		$('[name="id"]').val('');
 		$('#manage-position').get(0).reset();
 		$('.select2').val('').select2({
-			placeholder:"Please Select Here",
+			placeholder:"Por favor seleccione",
 			width:"100%"
 		})
 	}
 	$('.select2').select2({
-		placeholder:"Please Select Here",
+		placeholder:"Por favor seleccione",
 		width:"100%"
 	})
 	$('#manage-position').submit(function(e){
@@ -124,14 +124,14 @@
 		    type: 'POST',
 			success:function(resp){
 				if(resp==1){
-					alert_toast("Data successfully added",'success')
+					alert_toast("Datos agregados correctamente",'success')
 					setTimeout(function(){
 						location.reload()
 					},1500)
 
 				}
 				else if(resp==2){
-					alert_toast("Data successfully updated",'success')
+					alert_toast("Datos actualizados con éxito",'success')
 					setTimeout(function(){
 						location.reload()
 					},1500)
@@ -152,7 +152,7 @@
 		end_load()
 	})
 	$('.delete_position').click(function(){
-		_conf("Are you sure to delete this position?","delete_position",[$(this).attr('data-id')])
+		_conf("¿Está seguro de eliminar este cargo?","delete_position",[$(this).attr('data-id')])
 	})
 	function displayImg(input,_this) {
     if (input.files && input.files[0]) {
@@ -172,7 +172,7 @@
 			data:{id:$id},
 			success:function(resp){
 				if(resp==1){
-					alert_toast("Data successfully deleted",'success')
+					alert_toast("Datos eliminados correctamente",'success')
 					setTimeout(function(){
 						location.reload()
 					},1500)

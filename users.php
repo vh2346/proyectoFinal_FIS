@@ -72,7 +72,7 @@ $('.edit_user').click(function(){
 	uni_modal('Edit User','manage_user.php?id='+$(this).attr('data-id'))
 })
 $('.delete_user').click(function(){
-		_conf("Estas seguro de eliminar este usuario?","delete_user",[$(this).attr('data-id')])
+		_conf("¿Esta seguro de eliminar este usuario?","delete_user",[$(this).attr('data-id')])
 	})
 	function delete_user($id){
 		start_load()

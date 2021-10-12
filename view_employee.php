@@ -87,13 +87,13 @@ $emp = $conn->query("SELECT e.*,d.name as dname,p.name as pname FROM employee e 
 </style>
 <script>
 	$('#new_allowance').click(function(){
-		uni_modal("New Allowace for <?php echo $employee_no.' - '.ucwords($lastname.", ".$firstname." ",$middlename) ?>",'manage_employee_allowances.php?id=<?php echo $_GET['id'] ?>','mid-large')
+		uni_modal("Nueva novedad para <?php echo $employee_no.' - '.ucwords($lastname.", ".$firstname." ",$middlename) ?>",'manage_employee_allowances.php?id=<?php echo $_GET['id'] ?>','mid-large')
 	})
 	$('#new_deduction').click(function(){
-		uni_modal("New Deduction for <?php echo $employee_no.' - '.ucwords($lastname.", ".$firstname." ",$middlename) ?>",'manage_employee_deductions.php?id=<?php echo $_GET['id'] ?>','mid-large')
+		uni_modal("Nueva deduccion para <?php echo $employee_no.' - '.ucwords($lastname.", ".$firstname." ",$middlename) ?>",'manage_employee_deductions.php?id=<?php echo $_GET['id'] ?>','mid-large')
 	})
 	$('.remove_allowance').click(function(){
-				_conf("Estas seguro de eliminar esta novedad?","remove_allowance",[$(this).attr('data-id')])
+				_conf("¿Esta seguro de eliminar esta novedad?","remove_allowance",[$(this).attr('data-id')])
 			})
 function remove_allowance(id){
 			start_load()

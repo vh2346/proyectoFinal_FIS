@@ -10946,7 +10946,7 @@
 					 *      } );
 					 *    } );
 					 */
-					"sFirst": "First",
+					"sFirst": "Primero",
 
 
 					/**
@@ -10969,7 +10969,7 @@
 					 *      } );
 					 *    } );
 					 */
-					"sLast": "Last",
+					"sLast": "Ultimo",
 
 
 					/**
@@ -10992,7 +10992,7 @@
 					 *      } );
 					 *    } );
 					 */
-					"sNext": "Next",
+					"sNext": "Siguiente",
 
 
 					/**
@@ -11015,7 +11015,7 @@
 					 *      } );
 					 *    } );
 					 */
-					"sPrevious": "Previous"
+					"sPrevious": "Previo"
 				},
 
 				/**
@@ -11231,7 +11231,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sLengthMenu": "Ver _MENU_ entries",
+				"sLengthMenu": "Ver _MENU_ entradas",
 
 
 				/**

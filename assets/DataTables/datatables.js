@@ -10958,7 +10958,7 @@
 					 *      } );
 					 *    } );
 					 */
-					"sFirst": "First",
+					"sFirst": "Primero",
 
 
 					/**
@@ -10981,7 +10981,7 @@
 					 *      } );
 					 *    } );
 					 */
-					"sLast": "Last",
+					"sLast": "Ultimo",
 
 
 					/**
@@ -11027,7 +11027,7 @@
 					 *      } );
 					 *    } );
 					 */
-					"sPrevious": "Previous"
+					"sPrevious": "Previo"
 				},
 
 				/**

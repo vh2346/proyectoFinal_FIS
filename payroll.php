@@ -6,7 +6,7 @@
 				<br />
 				<div class="card">
 					<div class="card-header">
-						<span><b>Lista de nómina</b></span>
+						<span><b>Lista de nóminas</b></span>
 						<button class="btn btn-primary btn-sm btn-block col-md-3 float-right" type="button" id="new_payroll_btn"><span class="fa fa-plus"></span> Añadir nómina</button>
 					</div>
 					<div class="card-body">
@@ -85,7 +85,7 @@
 				uni_modal("New Payroll","manage_payroll.php")
 			})
 			$('.remove_payroll').click(function(){
-				_conf("Estas seguro de eliminar esta nómina?","remove_payroll",[$(this).attr('data-id')])
+				_conf("¿Esta seguro de eliminar esta nómina?","remove_payroll",[$(this).attr('data-id')])
 			})
 			$('.calculate_payroll').click(function(){
 				start_load()
@@ -115,7 +115,7 @@
 				error:err=>console.log(err),
 				success:function(resp){
 						if(resp == 1){
-							alert_toast("Datos del empleado exitosamente eliminados","success");
+							alert_toast("Nómina eliminada correctamente","success");
 								setTimeout(function(){
 								location.reload();
 
