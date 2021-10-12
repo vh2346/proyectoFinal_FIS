@@ -132,7 +132,7 @@
 		end_load()
 	})
 	$('.delete_department').click(function(){
-		_conf("Estas seguro de eliminar este departamento?","delete_department",[$(this).attr('data-id')])
+		_conf("¿Esta seguro de eliminar este departamento?","delete_department",[$(this).attr('data-id')])
 	})
 	function displayImg(input,_this) {
     if (input.files && input.files[0]) {

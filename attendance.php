@@ -120,11 +120,11 @@
 			})
 			$('.remove_attendance').click(function(){
 				var d = '"'+($(this).attr('data-id')).toString()+'"';
-				_conf("Estas seguro de eliminar el tiempo de este empleado?","remove_attendance",[d])
+				_conf("¿Esta seguro de eliminar el horario de este empleado?","remove_attendance",[d])
 			})
 			$('.rem_att').click(function(){
 				var $id=$(this).attr('data-id');
-				_conf("Estas seguro de eliminar?","rem_att",[$id])
+				_conf("¿Esta seguro de eliminar?","rem_att",[$id])
 			})
 		});
 		function remove_attendance(id){
@@ -138,7 +138,7 @@
 				error:err=>console.log(err),
 				success:function(resp){
 						if(resp == 1){
-							alert_toast("Tiempo del empleado eliminado correctamente",'success');
+							alert_toast("Horario del empleado eliminado correctamente",'success');
 								setTimeout(function(){
 								location.reload();
 
@@ -157,7 +157,7 @@
 				error:err=>console.log(err),
 				success:function(resp){
 						if(resp == 1){
-							alert_toast("Tiempo del empleado eliminado correctamente",'success');
+							alert_toast("Horario del empleado eliminado correctamente",'success');
 								setTimeout(function(){
 								location.reload();
 
