@@ -11070,7 +11070,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sInfo": "Showing _START_ to _END_ of _TOTAL_ entries",
+				"sInfo": "Mostrando _START_ a _END_ de _TOTAL_ entradas",
 
 
 				/**
@@ -11091,7 +11091,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sInfoEmpty": "Showing 0 to 0 of 0 entries",
+				"sInfoEmpty": "Mostrando 0 a 0 de 0 entradas",
 
 
 				/**
@@ -11113,7 +11113,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sInfoFiltered": "(filtered from _MAX_ total entries)",
+				"sInfoFiltered": "(filtrado de _MAX_ entradas totales)",
 
 
 				/**
@@ -12588,7 +12588,7 @@
 				"bFilter": null,
 
 				/**
-				 * Table information element (the 'Showing x of y records' div) enable
+				 * Table information element (the 'Viendo x de y registros' div) enable
 				 * flag.
 				 * Note that this parameter will be set by the initialisation routine. To
 				 * set a default use {@link DataTable.defaults}.
